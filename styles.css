@@ -1,0 +1,144 @@
+Tamam, işte PHP hesap makinesi projesi için basit, modern ve temiz bir tasarım sağlayan, yorumlanmış bir `styles.css` dosyası:
+
+```css
+/* Genel Stil Tanımları */
+body {
+  font-family: sans-serif;
+  background-color: #f0f8ff; /* Açık mavi arka plan */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff; /* Beyaz konteyner */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px; /* Sabit genişlik */
+  text-align: center;
+}
+
+h1 {
+  color: #4682b4; /* Mavi başlık */
+  margin-bottom: 20px;
+}
+
+/* Form Stil Tanımları */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #333;
+  text-align: left;
+}
+
+input[type="number"] {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Buton Stil Tanımları */
+button[type="submit"] {
+  background-color: #4682b4; /* Mavi buton */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease; /* Efekt için geçiş */
+}
+
+button[type="submit"]:hover {
+  background-color: #2e628b; /* Daha koyu mavi */
+}
+
+/* Hata Mesajı Stil Tanımları */
+.error {
+  color: #dc143c; /* Kırmızı hata mesajı */
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/* Sonuç Alanı Stil Tanımları */
+.result {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #e6f7ff; /* Açık mavi zemin */
+  border: 1px solid #b0e2ff;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Responsive Tasarım (İsteğe Bağlı) */
+@media (max-width: 480px) {
+  .container {
+    width: 90%; /* Daha küçük ekranlarda daha geniş */
+  }
+}
+```
+
+**Açıklamalar:**
+
+*   **Genel:**
+    *   `body`: Genel arka plan, yazı tipi ve hizalama. `display: flex` ile içerik ortalanır.
+    *   `.container`: Hesap makinesi içeriğini barındıran beyaz bir kutu.
+    *   `h1`: Başlık için stil.
+
+*   **Form:**
+    *   `form`: Form öğelerinin düzeni (dikey).
+    *   `label`: Etiketler için stil.
+    *   `input[type="number"]`: Sayı giriş alanları için stil.
+
+*   **Buton:**
+    *   `button[type="submit"]`: Gönder butonu için stil.  `transition` özelliği, üzerine gelindiğinde renk değişimini yumuşatır.
+    *   `button[type="submit"]:hover`: Üzerine gelindiğinde butonun rengi değişir.
+
+*   **Hata Mesajı:**
+    *   `.error`: Hata mesajları için kırmızı renkli stil.
+
+*   **Sonuç:**
+    *   `.result`: Hesaplama sonucunu göstermek için stil.
+
+*   **Responsive Tasarım (İsteğe Bağlı):**
+    *   `@media (max-width: 480px)`: Ekran boyutu 480 pikselden küçük olduğunda konteynerin genişliğini ayarlar. Bu, mobil cihazlarda daha iyi bir görünüm sağlar.
+
+**Nasıl Kullanılır:**
+
+1.  Bu CSS kodunu `styles.css` adlı bir dosyaya kaydedin.
+2.  PHP hesap makinesi dosyanızda, HTML başlığı içinde bu CSS dosyasını bağlayın:
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PHP Hesap Makinesi</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <!-- Hesap makinesi içeriği burada -->
+</body>
+</html>
+```
+
+**Özelleştirme:**
+
+*   **Renkler:**  Renkleri değiştirmek için `#f0f8ff`, `#fff`, `#4682b4`, `#2e628b`, `#dc143c`, `#e6f7ff`, `#b0e2ff` renk kodlarını düzenleyin.
+*   **Yazı Tipi:** `font-family` özelliğini değiştirerek farklı bir yazı tipi kullanın.
+*   **Genişlik:** `.container` sınıfındaki `width` özelliğini değiştirerek hesap makinesinin genişliğini ayarlayın.
+*   **Border-radius:**  Köşe yuvarlaklığını değiştirmek için `border-radius` değerlerini ayarlayın.
+*   **Box-shadow:** `.container` sınıfındaki `box-shadow` özelliğini değiştirerek gölge efektini özelleştirin.
+
+Bu CSS, PHP hesap makinesi projenize basit, modern ve temiz bir görünüm kazandıracaktır.  Renkleri ve diğer özellikleri projenize uyacak şekilde özelleştirmeyi unutmayın.
